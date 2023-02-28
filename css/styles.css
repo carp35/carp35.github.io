@@ -1,0 +1,296 @@
+@import url('https://fonts.googleaplis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(130, 182, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 2000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .solapaIzq {
+    background-color: #094357;
+    position: relative;
+    padding: 30px;
+}
+
+.container .solapaIzq .inicio .contenido-section{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.profileText .imgPerfil {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgPerfil img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacto {
+    padding-top: 40px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contacto ul {
+    position: relative;
+}
+
+.contacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contacto ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contacto ul li span {
+    color: white;
+    font-weight: 300;
+}
+
+.imgicon{
+    width: 18px;
+    height: 18px;
+}
+
+/*boton enviar correo
+.body-bottom {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, Sans-serif;
+}*/
+
+a {
+    text-decoration: none;
+
+}
+
+.rainbow-button {
+    width: calc(9vw + 6px);
+    height: calc(2vw + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    margin-top: 100px;
+
+}
+
+.rainbow-button:after {
+    content: attr(alt);
+    width: 9vw;
+    height: 2vw;
+    background-color: #094357;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rainbow-button:hover {
+    animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+.container .solapaDer {
+    position: relative;
+    padding: 40px;
+}
+
+.ApellYNomb {
+    text-align: center;
+    padding: 1px;
+    border: 2px;
+    margin: 5px 5px 5px 5px;
+    font-family: none;
+
+}
+
+.ApellYNomb h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Lora', serif;
+}
+
+.ApellYNomb h3 {
+    font-size: 20px;
+    color: #094357;
+    font-family: 'Lora', serif;
+}
+
+.sobreMi {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    margin: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+}
+
+.uncaus {
+    color: #094357;
+}
+
+/*.titleCentro {
+    font-family: 'Petrona', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #094357;
+    margin: 10px 0px 10px 0px;
+    border-bottom: red;
+}*/
+
+.titleCentro {
+    color: #040c55;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.border-bottom{
+    border-bottom: 2.75px solid rgba(14, 2, 63, 0.5);
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+
+.texto li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.texto li h4{
+    font-size: 18px;
+    color: #022b38;
+    font-weight: 500;
+}
+.texto li h5{
+    font-size: 12px;
+    color: #146f8d;
+}
+
+/*SECTION INICIO*/
+
+.inicio{
+    position: relative;
+}
+
+/*menu lateral*/
+
+
+.inicio .contenido-section{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+    color: #FFF;
+}
+
+
+.inicio .contenido-section header nav{
+    position: fixed;
+    margin-left: 5px;
+    background-color: rgba(86, 53, 177, 0.336);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index:1;
+    display: none;
+    max-height: fit-content;
+}
+
+.inicio .contenido-section header nav a{
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido-section header .nav-bar{
+    position: relative;
+    background-color: #201491;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inicio .contenido-section header .nav-bar:hover{
+    box-shadow: 0 0 35px #FFF;
+}
